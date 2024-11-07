@@ -1,0 +1,12 @@
+##The main folder with the RELEASE and ROLLBACK folders which both contain the "execute.sql" file
+sql_script_path=./TICKETS/1
+##The path that the PowerShell script and the SQL script will output the results inside a folder with the name of the datetime the script was executed. Don't put a slash at the end (e.g. "/") of this variable.
+output_folder=/OUTPUT
+##The action to perform: ROLLBACK or RELEASE
+#action=RELEASE
+action=ROLLBACK
+######################## The sql plus environment credentials for all the database environments that this script will be executed. The items are seperated by "," with no spaces in between.
+##All Database Environments
+#db_environment_creds=MYSCHEMA/PASSWORD@DATABASE1,MYSCHEMA/PASSWORD@DATABASE2,MYSCHEMA/PASSWORD@DATABASE3,MYSCHEMA/PASSWORD@DATABASE4,MYSCHEMA/PASSWORD@DATABASE5,MYSCHEMA/PASSWORD@DATABASE6
+##Specific Database Environments.
+db_environment_creds=MYSCHEMA/PASSWORD@DATABASE1
