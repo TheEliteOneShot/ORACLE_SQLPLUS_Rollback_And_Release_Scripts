@@ -1,5 +1,5 @@
--- This table holds the all of the current compilation errors owned by that schema. 
---It's compared with the errors again after the script runs to write the output log any new compilation errors.
+--This table holds the all of the current compilation errors owned by that schema. 
+--It's compared with the errors again after the script runs to write to the output log any new compilation errors.
 
 CREATE TABLE "SEVDBA".current_errors
 (
