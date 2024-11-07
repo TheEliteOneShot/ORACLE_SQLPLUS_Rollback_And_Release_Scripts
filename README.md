@@ -1,8 +1,7 @@
 # ORACLE_SQLPLUS_Rollback_And_Release_Scripts
 A very lightweight and clean script framework for releasing and rolling back scripts in an organized fashion. This script allows for easy releases and rollback's that can be executed on multiple databases at once. 
 
-This script will stop and rollback any DML changes.
-This script will stop on any DDL errors and in addition will highlight which released packages contained new compilation errors.
+This script will stop and rollback any DML changes upon error. This script will stop on any DDL errors and in addition will highlight which released packages contained new compilation errors. DDL is automatically committed and therefore cannot be rolled back like DML changes.
 
 1. Install **SQLPLUS**.
 2. Edit **input_variables.txt** with your preference.
